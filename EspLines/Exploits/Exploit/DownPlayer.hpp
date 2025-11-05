@@ -1,0 +1,16 @@
+#pragma once
+#include <cstdint>
+#include <EspLines/Math/Vector/Vector3.hpp>
+#include <EspLines/Player.h>
+#include <src/Globals.hpp>
+#include <EspLines/Memory/Memory.hpp>
+
+namespace DownPlayer {
+    class DownPlayerr {
+    public:
+        static void DownPlayer();
+        static void StopDownPlayer();
+        static void RestoreAllPositions();
+        static bool IsLocalFiring();
+    };
+}

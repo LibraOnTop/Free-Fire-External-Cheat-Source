@@ -1,0 +1,23 @@
+#ifndef ENEMYPULL360_HPP
+#define ENEMYPULL360_HPP
+
+#include <atomic>
+#include <thread>
+
+class EnemyPull {
+public:
+    class EnemyPull360 {
+    public:
+        static void Start();
+        static void Stop();
+        static bool IsLocalFiring();
+        static void EnemyPullLoop();
+        static void RestoreOriginalPosition();
+    };
+
+};
+
+extern std::atomic<bool> enemyPullRunning;
+extern std::thread enemyPullThread;
+
+#endif // ENEMYPULL360_HPP

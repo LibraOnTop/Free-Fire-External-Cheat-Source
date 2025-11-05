@@ -1,0 +1,19 @@
+#pragma once
+#include <cstdint>
+#include <optional>
+#include <EspLines/Math/Vector/Vector3.hpp>
+#include <EspLines/Player.h>
+#include <src/Globals.hpp>
+#include <EspLines/Memory/Memory.hpp>
+
+namespace GhostHack {
+    class GhostHack {
+    public:
+        static void Start();
+        static void Stop();
+        static bool IsActive();
+        static std::optional<Vector3> GetGhostBodyPosition();
+        static void SetToggle(bool state);
+        static bool IsToggled();
+    };
+}

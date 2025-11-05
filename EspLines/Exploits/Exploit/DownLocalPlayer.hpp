@@ -1,0 +1,15 @@
+#pragma once
+#include <cstdint>
+#include <EspLines/Math/Vector/Vector3.hpp>
+#include <EspLines/Player.h>
+#include <src/Globals.hpp>
+#include <EspLines/Memory/Memory.hpp>
+
+namespace DownLocalPlayer {
+    class DownLocalPlayerr {
+    public:
+        static void DownLocal();
+        static void StopDownLocal();
+        static bool IsActive();
+    };
+}

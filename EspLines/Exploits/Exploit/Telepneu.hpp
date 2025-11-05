@@ -1,0 +1,19 @@
+#ifndef TELEPNEU_HPP
+#define TELEPNEU_HPP
+
+#include <atomic>
+#include <thread>
+
+class Telepneu {
+public:
+    class Telepneuu {
+    public:
+        static void TelepneuWork();
+        static void StopTelepneu();
+    };
+};
+
+extern std::atomic<bool> telepneuRunning;
+extern std::thread telepneuThread;
+
+#endif // TELEPNEU_HPP
